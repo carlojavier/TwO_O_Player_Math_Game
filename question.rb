@@ -11,10 +11,10 @@ module MathGame
             "if you add #{@first_number} and #{@second_number}, what do you get?"
         end
 
-        # run get.chomps in game
         def correct?(answer)
             answer == @answer
         end
+        
     end
 end
 

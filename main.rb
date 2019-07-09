@@ -1,5 +1,6 @@
-require '.Game/'
-require '.Player/'
-require '.Question/'
+require './question'
+require './player'
+require './game'
+require './turn'
 
-MathGame::Game.new.begin
+MathGame::Game.new.start

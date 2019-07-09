@@ -1,25 +1,26 @@
 module MathGame
     class Player
-        @@current_players = 0
+        @@number_of_players = 0
+        attr_reader :life, :name
 
 
         def initialize
-            @@current_players += 1
-            @name = "player #{@@current_players}"
+            @@number_of_players += 1
+            @name = "player #{@@number_of_players}"
             @life = 3
         end
 
-        def cut_hp
+        def lose_life
             @life -= 1
         end
 
-        def player_points
+        def player_score
             "#{name}: #{@life}/3"
         end
 
-        # record score from game file
-        def self.points player
-            "#{players[0].player_points} vs #{players[1].player_points}"
+        def self.score players
+            "#{players[0].player_score} vs #{players[1].player_score}"
         end
+
     end
 end
