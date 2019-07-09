@@ -2,7 +2,7 @@ module MathGame
     class Turn
 
         def initialize (player)
-            puts '-----OKAY, SWITCH-----'
+            puts '**********OKAY, SWITCH**********'
             current_question = Question.new
             puts "#{player.name}: #{current_question.question}"
             @answer = gets.chomp

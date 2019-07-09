@@ -24,7 +24,7 @@ module MathGame
                 end
                 current_player_counter = next_player_counter
             end
-            puts "-----its over, stop playing-----"
+            puts "**********its over, stop playing**********"
         end
     end
 end
