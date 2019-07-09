@@ -2,8 +2,8 @@ module MathGame
     class Question
 
         def initialize
-            @first_number = rand(1...21)
-            @second_number = rand(1...21)
+            @first_number = Random.rand(1...21)
+            @second_number = Random.rand(1...21)
             @answer = @first_number + @second_number
         end
 
